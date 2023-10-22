@@ -21,6 +21,7 @@ Use the SFTP command-line tool to establish a connection to the sandbox environm
 
 ```bash
 sftp <username>@<hostname>
+```
 
 ## Step 4: Navigate to Destination Directory
 
@@ -28,6 +29,7 @@ Once connected, navigate to the directory in the sandbox environment where you w
 
 ```bash
 cd /path/to/destination/directory
+```
 
 ## Step 5: Upload Screenshots
 
@@ -35,6 +37,7 @@ Use the SFTP put command to upload the screenshots from your local machine to th
 
 ```bash
 put <local_path>
+```
 
 ## Step 6: Confirm Transfer
 
