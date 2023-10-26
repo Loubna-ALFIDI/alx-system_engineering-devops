@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+# This script is displaying "bad luck" for 4th loop iteration, "good luck" for 8th loop iteration and "Best School" for other iterations.
+i=1
+while [ $i -le 10 ]
+do
+    if [ $i -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ $i -eq 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    i=$((i+1))
+done
