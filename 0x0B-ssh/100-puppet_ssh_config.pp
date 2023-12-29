@@ -1,11 +1,7 @@
 # Client configuration file (w/ Puppet)
 
-file {
-    source => "/etc/ssh/ssh_config":
-    ensure => present,
-}
-
 file_line { "Turn off passwd auth":
+    ensure => present,
     path => "/etc/ssh/ssh_config",
     line => "PasswordAuthentification no",
     match => "^@PasswordAuthentification",
