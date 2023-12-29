@@ -6,7 +6,7 @@ file_line { 'Turn off passwd auth':
     line => 'PasswordAuthentification no',
 }
 
-file_line { 'Declare identify file':
+file_line { 'Declare identity file':
     path => '/etc/ssh/ssh_config',
     line => 'IdentityFile ~/.ssh/school',
 }
