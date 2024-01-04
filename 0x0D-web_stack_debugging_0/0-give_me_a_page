@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# run appache
+sudo service apache2 start
+
