@@ -1,0 +1,8 @@
+sudo sh -c "echo 'deb [signed-by=/usr/share/keyrings/datadog-archive-keyring.gpg] https://apt.datadoghq.com/ stable main' > /etc/apt/sources.list.d/datadog.list"
+sudo touch /usr/share/keyrings/datadog-archive-keyring.gpg
+sudo chmod a+r /usr/share/keyrings/datadog-archive-keyring.gpg
+
+curl https://keys.datadoghq.com/707e3b6cd4d7eb8ba6e4a764d715029e.public | sudo gpg --no-default-keyring --keyring /usr/share/keyrings/datadog-archive-keyring.gpg --import --batch
+curl https://keys.datadoghq.com/707e3b6cd4d7eb8ba6e4a764d715029e_C0962C7D.public | sudo gpg --no-default-keyring --keyring /usr/share/keyrings/datadog-archive-keyring.gpg --import --batch
+curl https://keys.datadoghq.com/707e3b6cd4d7eb8ba6e4a764d715029e_F14F620E.public | sudo gpg --no-default-keyring --keyring /usr/share/keyrings/datadog-archive-keyring.gpg --import --batch
+curl https://keys.datadoghq.com/707e3b6cd4d7eb8ba6e4a764d715029e_382E94DE.public | sudo gpg --no-default-keyring --keyring /usr/share/keyrings/datadog-archive-keyring.gpg --import --batch
